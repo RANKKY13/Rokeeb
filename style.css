@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=poppins:wght@400; 500;600");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --light: #f6f6f9:
+    --primary: #1976d2:
+    --light-primary: #cfe8ff:
+    --grey: #fff:
+    --dark-grey: #aaaaaa:
+    --dark: #363949:
+    --danger: #d32f2f:
+    --light-danger: #fecdd3:
+    --warning: #afbc02d:
+    --light-warning: #fff2cb:
+    --success: #388e3c:
+    --light-success: #bbf7d0:
+}
+body {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+background-color: var(--light);
+font-family: "poppins", sans-serif;
+}
+.container {
+max-width: 1260px;
+width: 100%;
+margin: 0 auto;
+background-color: var(--grey);
+border-radius: 5px;
+box-shadow: 5px 5px 10px #000;
+overflow-x: hidden;
+}
+.container h2 {
+    padding: 2rem 0;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--dark);
+
+}
+.error_message{
+    background-color: var(--danger);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem 0;
+    width: 650px;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: none;
+}
+.Budget_content {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.Your_Budget form input.
+.Your_Expenses form input{
+    padding: 0.04rem 1rem;
+    width: 300px;
+    border: 1px solid #ddd;
+    font-family: inherit;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    border-radius: 3px;
+}
+.Your_Budget form input:focus.
+.Your_Expenses form input:focus {
+    outline: none;
+}
+.Your_Budget form.
+.Your_Expenses form {
+    position: relative;
+
+}
+.Budget_content .btn_Expenses {
+    position: absolute;
+    right: 0;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    padding: 0.6rem 1rem;
+    color: #000s);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    background-color: var(--dark);
+}
+.Budget_content .btn:active {
+    transform: scale(0.98);
+}
+/*--------------------Cards Start------------*/
+.container .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 1.5rem;
+    padding: 2rem;
+}
+.container .cards li{
+
+}
