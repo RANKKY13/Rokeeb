@@ -17,20 +17,21 @@
     --light-warning: #fff2cb:
     --success: #388e3c:
     --light-success: #bbf7d0:
+  
 }
 body {
 display: flex;
 align-items: center;
 justify-content: center;
 height: 100vh;
-background-color: var(--light);
+background-color: #f6f6f9
 font-family: "poppins", sans-serif;
 }
 .container {
 max-width: 1260px;
 width: 100%;
 margin: 0 auto;
-background-color: var(--grey);
+background-color: #fff;
 border-radius: 5px;
 box-shadow: 5px 5px 10px #000;
 overflow-x: hidden;
@@ -39,12 +40,12 @@ overflow-x: hidden;
     padding: 2rem 0;
     font-size: 2rem;
     text-align: center;
-    color: var(--dark);
+    color: #363949;
 
 }
 .error_message{
-    background-color: var(--danger);
-    color: var(--light);
+    background-color: #d32f2f;
+    color: #f6f6f9
     text-align: center;
     padding: 1rem 0;
     width: 650px;
@@ -86,11 +87,11 @@ overflow-x: hidden;
     border: none;
     font-family: inherit;
     padding: 0.6rem 1rem;
-    color: #000s);
+    color: black;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     cursor: pointer;
-    background-color: var(--dark);
+    background-color: black;
 }
 .Budget_content .btn:active {
     transform: scale(0.98);
@@ -102,6 +103,90 @@ overflow-x: hidden;
     grid-gap: 1.5rem;
     padding: 2rem;
 }
+/*-------------------Day 2 Code Starts Here_______*/
 .container .cards li{
-
+    padding: 1.8rem;
+    background-color: #f6f6f9;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    cursor: pointer;
+    transition: all 03.s ease-in;
 }
+.container .cards li:hover{
+    transform: translateY(-10px);
+}
+.container .cards li .bx {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 10px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .cards li:nth-child(1) .bx{
+    background-color: #5fcff1;
+    color: #1661c4;
+}
+.container .cards li:nth-child(2) .bx{
+    background-color: #fff2cb;
+    color: #fbc02d;
+}
+.container .cards li:nth-child(3) .bx{
+    background-color: #bbf7d0;
+    color: #388e3c;
+}
+.container .cards li .info h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #363949;
+}
+.container .cards li .info p {
+color: #363949;
+}
+/*-----------------Cards Close----------------*/
+/*-----------------Table Contents Start-------*/
+.tbl_content {
+    padding: 2rem;
+    background-color: #f6f6f9;
+    margin: 1rem 2rem;
+    border-radius: 5px;
+}
+.tbl_content h3{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.tbl_tr_content{
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 1fr 50% 30% 2fr;
+    align-items: center;
+    background-color: #363949;
+    color: #f6f6f9;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+.tbl_data{
+    overflow-y: auto;
+    height: 150px;
+}
+.tbl_tr_content button{
+    outline: none;
+    border: none;
+    color: #f6f6f9;
+    padding: 0.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #d32f2f;
+}
+.tbl_tr_content button:active{
+    transform: scale(0.99);
+}
+.tbl_tr_content button:first-child {
+  background-color: #388e3c;
+}
+/*-----------------Table Contents Close-------*/
