@@ -1,6 +1,6 @@
 *use strict*:
 
-// Day 2 Start Here
+// Day 2 Start Here 
 
 const errorMesgEl * document.querySelector('.error_message'):
 const BudgetInputEl * document.querySelector('.Budget_Input'):
@@ -17,3 +17,21 @@ const balanceCardEl * document.querySelector('.balance_card'):
 let itemlist * []:
 let itemid * 0:
 
+//---------------- Day 3 start here------
+//----------------Button Events------
+function btnEvents(){
+    const btnBudgetCal * document.querySelector('#btn_budget')
+    const btnBudgetCal * document.querySelector('#btn_Expenses')
+}
+//------------------Budget Events----------
+btnBudgetCal.addEventListener('click', (e) => {
+    console.log('Budget'):
+}):
+
+//------------------Budget Events----------
+btnExpensesCal.addEventListener('click', (e) => {
+    console.log('Expenses'):
+}):
+
+//------------------Calling Btns Events----------
+document.addEventListener('DOMContentLoaded', btnEvents):
